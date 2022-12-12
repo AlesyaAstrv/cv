@@ -1,0 +1,204 @@
+*{
+    font-family: 'Chivo Mono', monospace;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to bottom, #006666 0%, #00cc99 100%);
+    animation: colorbackground linear 10s infinite alternate;
+    }
+    @keyframes colorbackground {
+        0% { 
+            background: linear-gradient(to bottom, #006666 0%, #00cc99 100%);
+        }
+        100% { 
+            background: linear-gradient(to right, #006666 0%, #00cc99 100%);
+        }
+    }    
+nav{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-end;
+    align-items: flex-end;
+    gap: 50px;
+    font-size: 25px;
+}
+.button{
+    border: solid 2px rgb(25, 233, 198);
+    padding: 5px;
+    text-transform: uppercase;
+    color: aliceblue;
+    position: relative;
+    overflow: hidden;
+}
+.button:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1.5em;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+    transform: translateX(-2em)  skewX(-45deg);
+    transition: 0.5s;
+}
+.button:before:hover{
+    transform: translateX(10em)  skewX(-45deg);
+}
+nav>a{
+    text-decoration: none;
+    color: aliceblue;
+    transition: all 0.5s;
+}
+.top:hover{
+    color:   rgb(25, 233, 198);
+}
+main{
+    display: grid;
+    place-items: center;
+    
+}
+h2:hover{
+    background-color: #cc00a9;
+    color: aliceblue;
+}
+#first, #second, #third, #fourth, #fifth, #third-1{
+    height: 500px;
+    width: 80%;
+}
+#second, #third, #fourth, #fifth, #third-1{
+    background-color: aliceblue;
+    color: black;
+    padding-left: 20px;
+}
+#first{
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 25px;
+    
+}
+#first>img{
+    position: relative;
+    left:400px;
+    top: -100px;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+#first>img:hover{
+    box-shadow: 0px 0px 55px rgb(25, 233, 198);
+}
+#second{
+    height: 500px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 18px;
+    border-radius: 5px 5px 0 0;
+    background-image: url(icons/Top-12-Frontend-Development-Tools-to-Use-in-2022-2-1200x900\ \(1\).png);
+    background-repeat: no-repeat;
+    background-position: right;
+    
+} 
+#second>ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 18px;
+    list-style-type: none;
+} 
+#second>ul>li{
+    margin-bottom: 10px;
+} 
+#third{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 18px;
+} 
+#fifth{
+    margin-bottom: 500px;
+    border-radius: 0 0 5px 5px;
+}
+.tofb, .totwitter, .toinst, .togit, .tolinkedin, .toskype, .totelegram{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+.tofb{
+    background: url(icons/fb\ non\ colored.png);
+}
+.tofb:hover{
+    background: url(icons/fb\ colored.png);
+}
+.totwitter{
+    background: url(icons/tw\ non\ colored.png);
+}
+.totwitter:hover{
+    background: url(icons/tw\ colored.png);
+}
+.toinst{
+    background: url(icons/ins\ non\ colored.png);
+}
+.toinst:hover{
+    background: url(icons/ins\ colored.png);
+}
+.togit{
+    background: url(icons/git\ colored.png);
+}
+.toinst:hover{
+    background: url(icons/ins\ colored.png);
+}
+.tolinkedin{
+    background: url(icons/li\ non\ colored.png);
+}
+.tolinkedin:hover{
+    background: url(icons/li\ colored.png);
+}
+.toskype{
+    background: url(icons/skype\ non\ colored.png);
+}
+.toskype:hover{
+    background: url(icons/skype\ colored.png);
+}
+.totelegram{
+    background: url(icons/telegram\ non\ colored.png);
+}
+.totelegram:hover{
+    background: url(icons/telegram\ colored.png);
+}
+footer{
+    color: aliceblue;
+    animation: scroll 20s infinite linear;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+@keyframes scroll{
+    0%{
+        translate: (0, 0);
+        transform: translate(-50%, 0);
+    }
+    100%{
+        translate: (0, 0);
+        transform: translate(100%, 0);
+    }
+}
+.skills{
+    display: flex;
+    flex-direction: column;
+}
+#myBar{
+    background-color: #e0169d;
+}
+.ht{
+    display: flex;
+    flex-direction: column;
+}
+button{
+    display: inline-block;
+    width: 100px;
+}

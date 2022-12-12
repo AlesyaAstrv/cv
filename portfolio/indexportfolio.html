@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="stylesportfolio.css">
+    <script>
+        function move() {
+          var elem = document.getElementById("myBar");   
+          var width = 20;
+          var id = setInterval(frame, 10);
+          function frame() {
+            if (width >= 100) {
+              clearInterval(id);
+            } else {
+              width++; 
+              elem.style.width = width + '%'; 
+              elem.innerHTML = width * 1  + '%';
+            }
+          }
+        }
+        </script>
+</head>
+<body>
+    <div class="wrapper">
+       <nav>
+        <a href="#second" class="top">About me</a>
+        <a href="#third" class="top">Education</a> 
+        <a href="#fourth" class="top">Work</a>
+        <a href="#fifth" class="top">Contact</a>
+        <a href='#' class="button">MY Resume</a>
+       </nav>
+            <main>
+                <section id="first">
+                    <div>Hello! My name is</div>
+                    <div>Alesya Astrovskaya</div>
+                    <div>I'm a Frontend Developer</div>
+                    <img src="icons/girl.webp" width="130px" height="130px">          
+                </section>
+
+                <section id="second">
+                    <h2>About me</h2>
+                    <div>Interested in the entire frontend spectrum and working on ambitious projects with positive people.</div>
+                    <ul>
+                        <li>Possess excellent verbal and written communication skills</li>
+                        <li>Self-motivated, precise and dedicated</li>
+                        <li>Ability to achieve short term and long term objectives</li>
+                        <li>Possess good management and organizational skills</li>
+                        <li>Ability to handle multiple tasks and work under pressure</li>
+                    </ul>
+                    <div>Let's make something greate together</div>
+                </section>
+
+                <section id="third">
+                    <h2>Education</h2>
+                    <div class="skills">
+                        <div class="ht">
+                            <img src="icons/html.png" width="70px" height="70px">
+                            <div class="w3-light-grey">
+                                <div id="myBar" class="w3-container w3-green" style="width:20%">20%</div>
+                            </div>
+                                <br>
+                                <button class="w3-button w3-green" onclick="move()">Click Me</button> 
+                        </div>
+                    </div>
+                        <img src="icons/css.png" width="70px" height="70px">
+                        <img src="icons/VSCode.png" width="70px" height="70px"> 
+                </section>
+
+                <section id="third-1">
+                    <h2>Skills</h2>
+                    <h4>Additional technologies and skills</h4>
+                    <ul>
+                        <li>Quick learning</li>
+                        <li>RWD</li>
+                        <li>Teamwork</li>
+                        <li>B2 english</li>
+                    </ul>
+                    <div>BNTY</div>
+                </section>
+
+                <section id="fourth">
+                    <h2>Work</h2>
+                </section>
+
+                <section id="fifth">
+                    <h2>Contact</h2>
+                    <a class="tofb" href="https://www.facebook.com" ></a>
+                    <a class="totwitter" href="https://twitter.com"></a>
+                    <a class="toinst" href="https://www.instagram.com"></a>
+                    <a class="togit" href="https://github.com/github"></a>
+                    <a class="tolinkedin" href="https://ru.linkedin.com"></a>
+                    <a class="toskype" href="https://www.skype.com"></a>
+                    <a class="totelegram" href="https://web.telegram.org"></a>
+                </section>
+        
+            </main>
+                <footer>Designed & Built by Alesya Astrovskaya</footer>
+              
+
+
+    </div>
+</body>
+</html>
